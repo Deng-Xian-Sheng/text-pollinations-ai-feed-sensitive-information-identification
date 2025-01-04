@@ -30,3 +30,4 @@ python script.py
 ```
 
 3. 观察控制台输出以查看从API获取的实时数据。
+## 接口输出格式\n\n接口返回结果为 JSON 格式，主要包括以下两个字段：\n\n- **response**: 从 API 获取的响应信息。\n- **parameters**: 额外的参数信息，包括用户输入及上下文数据。\n\n### 示例\n\n```json\n{\n  "response": "Hello! ^_^ How are you?",\n  "parameters": {\n    "model": "openai",\n    "messages": [\n      {\n        "content": "hi",\n        "role": "user"\n      }\n    ]\n  }\n}\n```\n
